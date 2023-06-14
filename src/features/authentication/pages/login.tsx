@@ -15,7 +15,15 @@ interface formInterface {
   password: string;
 }
 interface apiResult {
-  data: null;
+  data: {
+    msg: string;
+    user: {
+      email: string;
+      firstname: string;
+      lastname: string;
+      role: string;
+    };
+  } | null;
   error: object | null;
 }
 
@@ -49,6 +57,7 @@ export default function Login() {
       setShowErrors(true);
     }
     if (response.data) {
+      console.log(response.data);
       setShowErrors(false);
       if (response.data.user.role === 'developer') {
         navigate('/developer');
