@@ -57,7 +57,6 @@ export default function Login() {
       setShowErrors(true);
     }
     if (response.data) {
-      console.log(response.data);
       setShowErrors(false);
       if (response.data.user.role === 'developer') {
         navigate('/developer');
@@ -66,8 +65,6 @@ export default function Login() {
         navigate('/admin');
       }
     }
-
-    console.log('response', response);
   };
 
   return (
