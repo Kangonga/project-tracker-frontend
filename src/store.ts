@@ -1,11 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 
-export interface storeInterface {
-  auth: {};
-  building: {};
-  meter: {};
-  utility: {};
-}
+export interface storeInterface {}
 export const store = configureStore({
   reducer: {},
 });
