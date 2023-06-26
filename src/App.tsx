@@ -19,7 +19,7 @@ export default function App() {
       {isLoading && isFetching && (
         <img style={{ width: '100dvw', height: '100dvh' }} src={images.spinner} alt="loading screen spinner" />
       )}
-      <>{isFetched && (data.status === 404 || !data == true) && <Navigate to="auth" />}</>
+      <>{isFetched && (data?.status === 404 || !data == true) && <Navigate to="auth" />}</>
       <>{data?.role === 'developer' && <Navigate to="developer" />}</>
       <>{data?.role === 'admin' && <Navigate to="admin" />}</>
       <CssBaseline />
