@@ -14,6 +14,7 @@ export const SideBarIcon = (props: sidebarprops) => {
   const navigate = useNavigate();
   return (
     <SideBarItem
+      sx={{ '&: hover': { color: 'coral', backgroundColor: '#f1f2', borderRadius: '5px' } }}
       open={props.open}
       onClick={(): void => {
         navigate(props.route);
