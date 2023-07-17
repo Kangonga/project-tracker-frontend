@@ -14,7 +14,7 @@ export default function Sidebar() {
   return (
     <Box sx={{ display: 'flex', height: '100%' }}>
       <CssBaseline />
-      <Drawer variant="permanent" open={open} PaperProps={{ sx: { backgroundColor: '#5A57FF', color: 'white' } }}>
+      <Drawer variant="permanent" open={open} PaperProps={{ sx: { backgroundColor: 'black', color: 'white' } }}>
         <DrawerHeader open={open}>
           {open && <Typography fontSize="1.5rem">Taskade</Typography>}
 
