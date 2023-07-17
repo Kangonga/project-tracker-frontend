@@ -16,32 +16,32 @@ export default function useSidebarIcons({ open }: drawerInterface) {
     {
       displayText: 'Dashboard',
       route: '',
-      icon: <Home sx={{ color: '#f1f2f3' }} />,
+      icon: <Home sx={{ color: 'orange' }} />,
       open: open,
     },
     {
       displayText: 'Projects',
       route: 'projects',
-      icon: <BallotOutlined sx={{ color: '#f1f2f3' }} />,
+      icon: <BallotOutlined sx={{ color: 'orange' }} />,
       open: open,
     },
 
     {
       displayText: 'Developers',
       route: 'profile',
-      icon: <EngineeringOutlined sx={{ color: '#f1f2f3' }} />,
+      icon: <EngineeringOutlined sx={{ color: 'orange' }} />,
       open: open,
     },
     {
       displayText: 'Profile',
       route: 'profile',
-      icon: <Person3Outlined sx={{ color: '#f1f2f3' }} />,
+      icon: <Person3Outlined sx={{ color: 'orange' }} />,
       open: open,
     },
     {
       displayText: 'Log Out',
       route: 'profile',
-      icon: <LogoutOutlined sx={{ color: '#f1f2f3' }} />,
+      icon: <LogoutOutlined sx={{ color: 'orange' }} />,
       open: open,
     },
   ];
