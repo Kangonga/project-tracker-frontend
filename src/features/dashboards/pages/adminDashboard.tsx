@@ -1,7 +1,9 @@
+import Sidebar from '@app/layouts/sidebar/sidebar';
+
 export default function AdminDashboard() {
   return (
-    <>
-      <h1>Hello admin</h1>
-    </>
+    <div style={{ display: 'flex' }}>
+      <Sidebar />
+    </div>
   );
 }
