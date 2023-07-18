@@ -35,12 +35,13 @@ export const DrawerHeader = styled('div')<DrawerHeaderProps>(({ open }) => ({
   display: 'flex',
   justifyContent: open ? 'space-between' : 'center',
   alignItems: 'center',
-  padding: '1rem',
+  paddingLeft: open ? '1rem' : '',
   height: '5.9rem',
-  // img: {
-  //   maxWidth: '60%',
-  //   borderRadius: '10px',
-  // },
+  '.logotext': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '.75rem',
+  },
 }));
 
 export const Drawer = styled(MuiDrawer, { shouldForwardProp: prop => prop !== 'open' })(({ theme, open }) => ({
@@ -57,10 +58,23 @@ export const Drawer = styled(MuiDrawer, { shouldForwardProp: prop => prop !== 'o
     '& .MuiDrawer-paper': closedMixin(theme),
   }),
 }));
+
 export const SideBarItem = styled(ListItem, { shouldForwardProp: prop => prop !== 'open' })<SideBarProps>(
   ({ open }) => ({
     display: 'block',
     padding: 0,
+    '.icon': {
+      color: 'white',
+      marginLeft: open ? '0' : '.3rem',
+    },
+    '&: hover': {
+      color: 'orange',
+      backgroundColor: 'white',
+      borderRadius: '25px',
+      '.icon': {
+        color: 'orange',
+      },
+    },
     ListItemButton: {
       minHeight: 48,
       justifyContent: open ? 'initial' : 'center',

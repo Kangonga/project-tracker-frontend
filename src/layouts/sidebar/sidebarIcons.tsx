@@ -1,5 +1,11 @@
 import { SvgIconProps } from '@mui/material';
-import { BallotOutlined, EngineeringOutlined, Home, LogoutOutlined, Person3Outlined } from '@mui/icons-material';
+import {
+  BallotOutlined,
+  EngineeringOutlined,
+  LogoutOutlined,
+  Person3Outlined,
+  SpaceDashboardOutlined,
+} from '@mui/icons-material';
 
 interface sidebarprops {
   open: boolean;
@@ -16,32 +22,32 @@ export default function useSidebarIcons({ open }: drawerInterface) {
     {
       displayText: 'Dashboard',
       route: '',
-      icon: <Home sx={{ color: 'orange' }} />,
+      icon: <SpaceDashboardOutlined className="icon" />,
       open: open,
     },
     {
       displayText: 'Projects',
       route: 'projects',
-      icon: <BallotOutlined sx={{ color: 'orange' }} />,
+      icon: <BallotOutlined className="icon" />,
       open: open,
     },
 
     {
       displayText: 'Developers',
       route: 'profile',
-      icon: <EngineeringOutlined sx={{ color: 'orange' }} />,
+      icon: <EngineeringOutlined className="icon" />,
       open: open,
     },
     {
       displayText: 'Profile',
       route: 'profile',
-      icon: <Person3Outlined sx={{ color: 'orange' }} />,
+      icon: <Person3Outlined className="icon" />,
       open: open,
     },
     {
       displayText: 'Log Out',
       route: 'profile',
-      icon: <LogoutOutlined sx={{ color: 'orange' }} />,
+      icon: <LogoutOutlined className="icon" />,
       open: open,
     },
   ];
